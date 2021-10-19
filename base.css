@@ -3,7 +3,7 @@
      *****Colors******
      *****************/
      --color-primary: plum;
-     --color-secondary: slategrey;
+     --color-secondary: rgb(222, 225, 228);
      --color-success: gold;
      --color-info: rgb(102, 188, 216);
      --color-warning: orange;
@@ -25,6 +25,7 @@
      /*******************
      ****Display Size****
      ********************/
+     --display-3xs: .75rem;
      --display-xxs: 1rem;
      --display-xs: 1.4rem;
      --display-sm: 1.6rem;
