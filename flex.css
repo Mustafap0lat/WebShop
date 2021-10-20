@@ -23,5 +23,6 @@
       .justify-content-around{justify-content: space-around;}
       .align-items-center{align-items: center;}
       .align-items-left{align-items: flex-start;}
+      .align-items-right{align-items: flex-end;}
        
       

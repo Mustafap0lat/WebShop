@@ -4,7 +4,8 @@
 .max-width{max-width: 192rem;}
 .card-width{max-width: 60rem;}
 .width-lg{max-width: 50%;}
-.min-width-xxl{min-width: 85%;}
+.min-width-xxl{min-width: 80%;}
+.min-width-l{min-width: 10%;}
 
 /*****************
 ***** Position****
@@ -85,7 +86,10 @@
 .p-15{padding: var(--distance-15);}
 
 .pr-4, .px-4{padding-right: var(--distance-4);} /*Paddings för höger/vänster på sidan, px-12 lägger in dom i en och ger vänster/höger marginal i en class istället*/
+.pr-5, .px-5{padding-right: var(--distance-5);}
 .pl-4, .px-4{padding-left: var(--distance-4);}
+.pl-5, .px-5{padding-right: var(--distance-5);}
+.pl-5, .px-5{padding-left: var(--distance-5);}
 .pl-6, .px-6{padding-right: var(--distance-6);}
 .pl-6, .px-6{padding-left: var(--distance-6);}
 .pl-12, .px-12{padding-left: var(--distance-12);}
@@ -93,6 +97,8 @@
 
 .pt-2, .py-2{padding-top: var(--distance-2);} 
 .pb-2, .py-2{padding-bottom: var(--distance-2);}
+.pt-4, .py-4{padding-top: var(--distance-4);} 
+.pb-4, .py-4{padding-top: var(--distance-4);} 
 
 /*******************
 **** Typography ***
@@ -102,6 +108,7 @@
 .text-uppercase{text-transform: uppercase;} /*Formaterar texten till stora bokstäver*/
 .text-bold {font-weight: bold;}
 
+.text-size-4xs{font-size:var(--display-4xs) ;}
 .text-size-3xs{font-size:var(--display-3xs) ;}
 .text-size-xxs{font-size: var(--display-xxs);}
 .text-size-xs{font-size: var(--display-xs);}
@@ -135,7 +142,12 @@ padding: var(--distance-1) var(--distance-3);} /*gör så att "3an" hamnar upp i
 .border-sm {border: var(--border-sm);}
 .border-lg {border: var(--border-lg);}
 .border-transparent{border: var(--border-transparent);}
+.box {width: 266px; height: 48  0px;border: var(--border-xs);}
+.border-line-right {border-right: 0.1rem solid var(--color-secondary);}
 
+.hide-bullet-list{list-style: none;}
+.box {width: 266px; height: 48  0px;border: var(--border-xs);}
+.box-1{width: 500px; height: 25  0px;border: var(--border-xs);}
 
 /*******************
 ****** Circle *****
@@ -163,7 +175,9 @@ padding: var(--distance-1) var(--distance-3);} /*gör så att "3an" hamnar upp i
 .logo-height-sm{max-height: 8rem;}
 .logo-width {max-width: 13rem;}
 .img-lg-width{max-width: 60%;} /*Ger en bild en mindre storlek*/
-
+.img-sm-width{max-width: 45%;}
+.img-xs-width{max-width: 40%;}
+.img{float: right;}
 
 /*****************
 *** Slideshow ****

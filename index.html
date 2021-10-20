@@ -2,106 +2,244 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,600,700|Open+Sans:300,400,600,700"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f4bf10d3c2.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,600,700|Open+Sans:300,400,600,700" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f4bf10d3c2.js"></script>
 
-    <link href="base.css" rel="stylesheet">
-    <link href="flex.css" rel="stylesheet">
-    <link href="layout.css" rel="stylesheet">
-    <link href="crayon.css" rel="stylesheet">
-    <link href="mediaqueries.css" rel="stylesheet">
+  <link href="base.css" rel="stylesheet">
+  <link href="flex.css" rel="stylesheet">
+  <link href="layout.css" rel="stylesheet">
+  <link href="crayon.css" rel="stylesheet">
+  <link href="mediaqueries.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <!-- Navigation -->
-    <header>
-        <!-- Colored Bar -->
-        <div class="d-flex bg-dark p-2">
-            <!-- Button -->
-            <button class="text-border btn-dark p-2 border-small-white">
-                <div class="mx-2 text-size-xxs icon-form-control align-items-center">
-                    <i class="fa fa-user text-size-xxs"></i>
-                    <span class="icon-form-control text-size-xs mr-2">Jane Doe</span>
-                    <i class="fas fa-caret-down"></i>
-                </div>
-
-            </button>
-            <!-- Header -->
-            <div class="d-flex justify-content-between align-items-center mx-auto mb-2">
-
-                <div class="d-flex text-border">
-                    <section>
-                        <i class="fa fa-phone-alt"></i>
-                        <span class="text-size-xs">+46 720450002</span>
-
-                        <i class="fas fa-envelope ml-4 mt-2"></i>
-                        <span class="text-size-xs">info@mystore.com</span>
-                </div>
-            </div>
-
-            <div class="p-2">
-                <a href="#"><i class="fab fa-facebook-square mr-1 text-border"></i></a>
-                <a href="#"><i class="fab fa-twitter mr-1 text-border"></i></a>
-                <a href="#"><i class="fab fa-instagram mr-1 text-border"></i></a>
-                <a href="#"><i class="fab fa-pinterest-p mr-1 text-border"></i></a>
-
-                </section>
-            </div>
+  <!-- Navigation -->
+  <header>
+    <!-- Colored Bar -->
+    <div class="d-flex bg-dark p-2">
+      <!-- Button -->
+      <button class="text-border btn-dark p-2 border-small-white">
+        <div class="mx-2 text-size-xxs icon-form-control align-items-center">
+          <i class="fa fa-user text-size-xxs"></i>
+          <span class="icon-form-control text-size-xs mr-2">Jane Doe</span>
+          <i class="fas fa-caret-down"></i>
         </div>
 
-        </div>
-    </header>
+      </button>
+      <!-- Header -->
+      <div class="d-flex justify-content-between align-items-center mx-auto mb-2">
 
-    <!-- Navigation -->
-    <nav class="d-flex p-2 mx-auto">       
-        
-        <img class="logo-width-sm p-8 mt-2 mb-2" src="images/images/logo/logo.png">
-        
-        
-                <i class="d-flex fas fa-search border-xs border-color-beige text-size-xxs bg-secondary p-2 my-8"></i>
-                <input type="text" placeholder="Search products" class=" form-control border-color-beige border-xs min-width-xxl text-size-xxs my-8">
-           
-        
-        <div class="d-flex p-2">
-            <a href="#" class="d-flex flex-column align-items-center text-decoration-none border-transparent position-relative d-sm-block">
-            <div class="d-flex align-items-center p-2 mr-1 border-color-white">
-                <i class="fas fa-heart text-dark mt-2 "></i>
+        <div class="d-flex text-border">
+          <section>
+            <i class="fa fa-phone-alt"></i>
+            <span class="text-size-xs">+46 720450002</span>
+
+            <i class="fas fa-envelope ml-4 mt-2"></i>
+            <span class="text-size-xs">info@mystore.com</span>
+        </div>
+      </div>
+
+      <div class="p-2">
+        <a href="#"><i class="fab fa-facebook-square mr-1 text-border"></i></a>
+        <a href="#"><i class="fab fa-twitter mr-1 text-border"></i></a>
+        <a href="#"><i class="fab fa-instagram mr-1 text-border"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p mr-1 text-border"></i></a>
+
+        </section>
+       </div>
+     
+
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="d-flex p-2 mx-auto justify-content-between align-items-center">
+
+    <img class="logo-width-sm p-8 mt-2 mb-2" src="images/images/logo/logo.png">
+
+
+    <i class="d-flex fas fa-search text-size-4xs bg-secondary p-3 align-items-center "></i>
+    <input type="text" placeholder="Search products" class=" form-control border-xs min-width-xxl text-size-xxs p-2 flex-grow ">
     
-            </div>
-           <span class="d-flex text-white text-size-3xs position-absolute icon-badge border-small-white circle bg-lime mt-4">4</span>
-        <div class="text-size-xxs justify-content-center text-uppercase ">Favs</div>   
-        </a>
+  
+      <section class="d-flex">
+      
+          <a href="#"class=" text-decoration-none position-relative border-line-right">
+            <div class=" mx-6 "> <i class="fas fa-heart text-dark mt-2 text-size-lg  "></i></div>
+            <span class="text-white text-size-3xs position-absolute icon-badge border-small-white circle bg-lime mt-2 mx-4">4</span>
+            <div class="d-flex text-size-xxs justify-content-center text-decoration-none text-dark text-uppercase">Favs</div>
+        
+          </a>
+       
 
-            <a href="#" class="d-flex flex-column align-items-center text-decoration-none border-transparent position-relative d-sm-block">
-                <div class="d-flex align-items-center  p-2 mr-1 border-color-white">
-                    <i class="fas fa-shopping-cart text-dark mt-2 "></i>
-                  </div>
-               <span class="d-flex text-white text-size-3xs position-absolute icon-badge border-small-white circle bg-lime mt-4">8</span>
-            <div class="text-size-xxs justify-content-center text-uppercase">1500$</div>   
-            </a>
-            <a href="#" class="d-flex flex-column align-items-center text-decoration-none border-transparent position-relative d-sm-block">
-                <div class="d-flex align-items-center  p-2 mr-1 border-color-white">
-                    <i class="fas fa-file-invoice-dollar text-dark mt-2"></i>
-                  </div>
-               <span class="d-flex text-white text-size-3xs position-absolute icon-badge border-small-white circle bg-lime mt-4">0</span>
-            <div class="text-size-xxs justify-content-center text-uppercase">0</div>   
-            </a>
-             </div>
+        
+        <a href="#"class=" text-decoration-none  position-relative border-line-right">
+          <div class=" mx-6"> <i class="fas fa-shopping-cart text-dark mt-2 text-size-lg "></i></div>
+          <span class="text-white text-size-3xs position-absolute icon-badge border-small-white circle bg-lime mt-2 mx-4">4</span>
+          <div class="d-flex text-size-xxs justify-content-center text-decoration-none text-dark text-uppercase">$1369</div>
+     
+      </a>
+     
+        
+
+      <a href="#"class=" text-decoration-none position-relative">
+        <div class="mx-6"> <i class="fas fa-file-invoice-dollar text-dark mt-2 text-size-lg "></i></div>
+        <span class="text-white text-size-3xs position-absolute icon-badge border-small-white circle bg-lime mt-2 mx-4">4</span>
+        <div class="d-flex text-size-xxs justify-content-center text-decoration-none text-dark text-uppercase">0</div>
+   
+    </a>
+   
+      </section>
+  </nav>
+  <hr color="whitesmoke" size="1">
+
+  <!-- Box -->
+  <nav class="">
+    <aside class="d-flex pr-4 p-2" role="navigation box">
+      <ul class=" mt-6 ml-4 hide-bullet-list box">
+        <li class="border-bottom-xs px-4 py-4 pb-2 pt-2">
+          <a href="#" class="fas fa-hdd text-info pr-3 text-decoration-none"></a><a href="#"
+            class="text-dark text-decoration-none text-bold"> Computers & Accessories</a>
+        </li>
+        <li class="border-bottom-xs px-4 py-4 pb-2 pt-2">
+          <a href="#" class="fas fa-tv text-info pr-2 text-decoration-none"></a><a href="#"
+            class="text-dark text-decoration-none text-bold"> TV, Video & Audio</a>
+        </li>
+        <li class="border-bottom-xs px-4 py-4 pb-2 pt-2">
+          <a href="#" class="fas fa-mobile-alt text-info text-decoration-none pr-2"></a><a href="#"
+            class="text-dark text-decoration-none text-bold"> Smartphones & Tablets</a>
+        </li>
+        <li class="border-bottom-xs px-4 py-4 pb-2 pt-2">
+          <a href="#" class="fas fa-camera-retro text-info text-decoration-none pr-2"></a>
+          <a href="#" class="text-dark text-decoration-none text-bold"> Photo Cameras</a>
+        </li>
+        <li class="border-bottom-xs px-4 py-4 pb-2 pt-2">
+          <a href="#" class="fas fa-video text-info text-decoration-none pr-2"> </a><a href="#"
+            class="text-dark text-decoration-none text-bold"> Video Cameras</a>
+        </li>
+        <li class="border-bottom-xs px-4 py-4 pb-2 pt-2">
+          <a href="#" class="fas fa-headphones text-info text-decoration-none pr-2"></a><a href="#"
+            class="text-dark text-decoration-none text-bold"> Headphones</a>
+        </li>
+        <li class="border-bottom-xs px-4 py-4 pb-2 pt-2">
+          <a href="#" class="fas fa-clock text-info text-decoration-none pr-2"></a><a href="#"
+            class="text-dark text-decoration-none text-bold"> Wearable Electronics</a>
+        </li>
+        <li class="border-bottom-xs px-4 py-4 pb-2 pt-2">
+          <a href="#" class="fas fa-images text-info text-decoration-none pr-2"></a><a href="#"
+            class="text-dark text-decoration-none text-bold"> Printers & Ink</a>
+        </li>
+        <li class="border-bottom-xs px-4 py-4 pb-2 pt-2">
+          <a href="#" class="fas fa-gamepad text-info text-decoration-none pr-2"></a><a href="#"
+            class="text-dark text-decoration-none text-bold"> Video Games</a>
+        </li>
+        <li class="border-bottom-xs px-4 py-4 pb-2 pt-2">
+          <a href="#" class="fas fa-volume-down text-info text-decoration-none pr-2"></a><a href="#"
+            class="text-dark text-decoration-none text-bold"> Speakers & Home Music</a>
+        </li>
+        <li class="border-bottom-xs px-4 py-4 pb-2 pt-2">
+          <a href="#" class="fas fa-server text-info text-decoration-none pr-2"></a><a href="#"
+            class="text-dark text-decoration-none text-bold"> HDD / SSD Data Storage</a>
+        </li>
+      </ul>
+  
+
+      
+      <!-- Products -->
+  <section class="justify-content-center">
+
+    <div class="d-flex justify-content-center align-items-center text-primary max-width mx-auto flex-wrap">
+    
+      <section class="d-flex flex-xs-column overflow-hidden justify-content-center m-6 card-width box-1">
+        <img src="images/images/products/AsusLaptop.jpg" class ="img-xs-width" alt="Asus Laptop">
+               
+          <section class="p-4 flex-grow ">
+          <h3>Surface Book 14 in</h3>
+         
+          <div class="text-cozy text-size-xs">
+          Computers & Accessories
+          </div>
           
-    </nav>
+        <div class="text-size-xs mt-2 mb-2 text-success">
+         $1963
+        </div>
+        
+        <h3 class="text-size-xs text-success">sum dolor sit amet, consectetur adpisicing elit, sed do eismod tempor incidicun</h3>
+
+        <div>
+          bbbbb
+        </div>
+       
+          </section>
+        <a href="#"><i class="far fa-heart p-4 text-dark"></i></a>
+       </div>
+       
+     
+      
+           </div>
+          </section>
+          <!-- Products -->
+           <section class="mb-15">
+   
+          <div class="d-flex justify-content-center text-white max-width mx-auto flex-wrap">
+        
+          <div class="d-flex flex-xs-column position-relative overflow-hidden border-radius m-6 card-width box-1">
+            <img src="images/images/products/AsusLaptop.jpg" class ="img-sm-width" alt="Children at school">
+            <div class="d-flex flex-column bg-info p-6">
+              <h2 class="mb-6"> Lorem ipsum dolor</h2>
+              <div><i class="far fa-calendar-alt mr-4 mb-4"></i>Age 2 to 4 Years</div>
+              <div><i class="far fa-clock mr-4 mr-4 mb-10"></i>9:00AM-11:00AM</div>
+              <div class="mb-10">Ipsum dolor sit amet consectetur adipisicing elit. Accusantium maiores eveniet optio iusto
+                molestias sunt.
+              </div>
+              <a class="btn-warning text-size-lg text-uppercase text-center border-radius shadow-lg p-4 mb-4">Learn more</a>
+            </div>
+            <div
+              class="d-flex flex-column justify-content-center align-items-center bg-info position-absolute m-6 p-4 text-bold text-size-xs lh-md border-radius">
+              <div>29</div>
+              <div>April</div>
+            </div>
+          </div>
+         
+          
+        </div>
+        </section>
+            <!-- Products -->
+       <section class="mb-15">
+   
+        <div class="d-flex justify-content-center text-white max-width mx-auto flex-wrap">
+        
+          <div class="d-flex flex-xs-column position-relative overflow-hidden border-radius m-6 card-width box-1">
+            <img src="images/images/products/AsusLaptop.jpg" class ="img-sm-width" alt="Children at school">
+            <div class="d-flex flex-column bg-info p-6">
+              <h2 class="mb-6"> Lorem ipsum dolor</h2>
+              <div><i class="far fa-calendar-alt mr-4 mb-4"></i>Age 2 to 4 Years</div>
+              <div><i class="far fa-clock mr-4 mr-4 mb-10"></i>9:00AM-11:00AM</div>
+              <div class="mb-10">Ipsum dolor sit amet consectetur adipisicing elit. Accusantium maiores eveniet optio iusto
+                molestias sunt.
+              </div>
+              <a class="btn-warning text-size-lg text-uppercase text-center border-radius shadow-lg p-4 mb-4">Learn more</a>
+            </div>
+            <div
+              class="d-flex flex-column justify-content-center align-items-center bg-info position-absolute m-6 p-4 text-bold text-size-xs lh-md border-radius">
+              <div>29</div>
+              <div>April</div>
+            </div>
+          </div>
+         
+          
+        </div>
+      </section>
 
 
+</aside>
 
-
-
-
-
+</nav>
 
 
 

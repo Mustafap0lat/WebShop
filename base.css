@@ -2,9 +2,9 @@
     /*****************
      *****Colors******
      *****************/
-     --color-primary: plum;
+     --color-primary: rgb(103, 103, 107);
      --color-secondary: rgb(222, 225, 228);
-     --color-success: gold;
+     --color-success: rgba(34, 34, 32, 0.76);
      --color-info: rgb(102, 188, 216);
      --color-warning: orange;
      --color-danger: orangered;
@@ -12,8 +12,8 @@
      --color-dark: #343a40;
      --color-white: white;
      --color-cyan: cyan;
-     --color-lime: limegreen;
-     --color-cozy: greenyellow;
+     --color-lime: rgb(125, 218, 125);
+     --color-cozy: rgb(157, 169, 179);
      --color-beige: beige;
      --color-transparent: transparent;
      --color-border: seashell;
@@ -25,7 +25,8 @@
      /*******************
      ****Display Size****
      ********************/
-     --display-3xs: .75rem;
+     --display-3xs: .65rem;
+     --display-4xs: .80rem;
      --display-xxs: 1rem;
      --display-xs: 1.4rem;
      --display-sm: 1.6rem;
@@ -80,7 +81,7 @@
      *****************/
      /*[var=Variabel funktionen]*/
     --border-xs-white: 0.1rem solid var(--color-white);
-    --border-xs: .1rem solid var(--color-light);
+    --border-xs: .1rem solid var(--color-secondary);
     --border-sm: .2rem solid var(--color-light);
     --border-lg: .4rem solid var(--color-white);
  
