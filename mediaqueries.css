@@ -1,9 +1,59 @@
-@media only screen and (max-width:  68.75em){/*1100px/16px = 68.75em*/
+
+
+
+
+@media only screen and (max-width:  85,375em){/*1100px/16px = 68.75em*/
     html{font-size: 50%;} /*texten ändras under 1100px när du "Zoomar ut" alltså överlappar inte texten / iconerna varandra */
+  }
+
+@media only screen and (max-width:  78,125em){/*1100px/16px = 68.75em*/
+    html{font-size: 100%;} /*texten ändras under 1100px när du "Zoomar ut" alltså överlappar inte texten / iconerna varandra */
+  }
+  @media only screen and (max-width: 48.75em){/*1100px/16px = 68.75em*/
+    html{font-size: 70%;} /*texten ändras under 1100px när du "Zoomar ut" alltså överlappar inte texten / iconerna varandra */
+    .align-sm-center {align-items: center;}  
+    .heading-xxs-width{width: 100% !important;}
+    .img-new-adjust {  width: 75rem;
+      height: 20rem !important;}
+      
+  }
+  @media only screen and (max-width: 40em){/*Samsung galaxy 5 Liggandes*/
+    html{font-size: 80%;} /*texten ändras under 1100px när du "Zoomar ut" alltså överlappar inte texten / iconerna varandra */
+    .align-sm-center {align-items: center;}  
+    .heading-xxs-width{width: 100% !important;}
+    .d-sm-none{display: none !important;}
+    .img-new-adjust {  width: 75rem;
+      height: 12rem !important;}
+ 
+  }
+    @media only screen and (max-width: 37.5em){/*1100px/16px = 68.75em*/
+      html{font-size: 70%;} /*texten ändras under 1100px när du "Zoomar ut" alltså överlappar inte texten / iconerna varandra */
+      .align-sm-center {align-items: center;}  
+      .img-new-adjust {  width: 75rem;
+        height: 12rem !important;}
     }
-    @media screen and (max-width:  56.25em){ /*900px/16px = 56.25em*/
+    @media only screen and (max-width: 29.5em){/*1100px/16px = 68.75em*/
+      html{font-size: 70%;} /*texten ändras under 1100px när du "Zoomar ut" alltså överlappar inte texten / iconerna varandra */
+      .align-sm-center {align-items: center;}    
+      .img-new-adjust {  width: 37.5rem;
+        height: 12rem !important;}
+    
+  
+    @media only screen and (max-width: 22.5em){/*1100px/16px = 68.75em*/
+      html{font-size: 80%;} /*texten ändras under 1100px när du "Zoomar ut" alltså överlappar inte texten / iconerna varandra */
+      .align-sm-center {align-items: center;}    
+        .img-new-adjust {  width: 29rem;
+          height: 12rem !important;}
+      }
+    
+      }
+    
+    
+  
+      @media screen and (max-width:  56.25em){ /*900px/16px = 56.25em*/
         .f-width{max-width: 50% !important;}  /*Featursen ska förändras som vi satt till 33% i Layout. när vi går under 900px. Featursen blir 50% istället för 33% */
-    }
+        
+      }
     
     @media screen and (max-width: 37.5em){/*600px / 16px = 37.5em*/ /*Samma som ovanstående fast 100% när vi går under 600px. */
         .d-sm-none{display: none !important;} /*Gör så att vår första navigation på toppen av sidan försvinner under 600px */ 
@@ -15,13 +65,39 @@
          footer > div > div{max-width: 100% !important;}  /*Första diven i footer och första diven i den sätter vi max width 100%.*/
         .mt-sm-12{margin-top: var(--distance-13);} /*ger utrymme när vi minskar*/
         .img-sm-width{width: 150% !important;} /*gör bilderna större när vi minskar*/
-        }  
+          
+      }  
         
-        @media screen and (max-width: 31.25em){/*500px / 16px = 31.25em*/
+        @media screen and (max-width: 37.5em){/*500px / 16px = 31.25em*/
           .flex-xs-column{flex-direction: column;}  /*bilderna lägger sig ovanför "i en column" under 500px, överskriver bredden i Classes Card, de byts till stående format*/
           .img-xs-width{max-width: 150% !important;}
     }
     
-        @media screen and (max-width: 25em){/*400px / 16px = 25em*/
+        @media screen and (max-width: 37.5em){/*400px / 16px = 25em*/
           .heading-xxs-width{width: 100% !important;}
         }
+
+        @media screen and (max-width: 48.75em) {
+          .wrap-sm {
+            flex-wrap: wrap !important;
+          }
+          .grow-sm {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+      
+          }
+      
+          @media screen and (max-width: 48.75em) {
+            .order-1 {
+              order: 1;
+              flex: 1 0 100%;
+              display: flex;
+              padding-top: 1rem;
+            }
+          }
+      
+        }
+
+       
+        

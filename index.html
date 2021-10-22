@@ -21,29 +21,33 @@
   <!-- Navigation -->
   <header>
     <!-- Colored Bar -->
-    <div class="d-flex bg-dark p-2 flex-grow">
+    <div class="d-flex bg-dark p-2 justify-content-between align-items-center">
+     
       <!-- Button -->
       <button class="text-border btn-dark p-2 border-small-white">
-        <div class="mx-2 text-size-xxs icon-form-control align-items-center">
+        <div class="mx-2 text-size-xxs align-items-center">
           <i class="fa fa-user text-size-xxs"></i>
-          <span class="icon-form-control text-size-xs mr-2">Jane Doe</span>
+          <span class="icon-form-control text-size-xs mr-2 d-sm-none">Jane Doe</span>
           <i class="fas fa-caret-down"></i>
         </div>
-
+       
+        
       </button>
+    
       <!-- Header -->
-      <div class="d-flex justify-content-between align-items-center mx-auto mb-2">
-
-        <div class="d-flex text-border">
-          <section>
+      <div class="d-flex justify-content-between justify-content-center align-items-center mx-auto mb-2 d-sm-none p-2">
+        <section>
+        <div class="d-flex text-border align-items-center">
+         
             <i class="fa fa-phone-alt"></i>
-            <span class="text-size-xs">+46 720450002</span>
+            <span class="text-size-xs ml-4">+46 720450002</span>
 
-            <i class="fas fa-envelope ml-4 mt-2"></i>
+            <i class="fas fa-envelope ml-4"></i>
             <span class="text-size-xs">info@mystore.com</span>
         </div>
       </div>
 
+      <!-- Icons -->
       <div class="p-2">
         <a href="#"><i class="fab fa-facebook-square mr-1 text-border"></i></a>
         <a href="#"><i class="fab fa-twitter mr-1 text-border"></i></a>
@@ -56,15 +60,19 @@
   </header>
 
   <!-- Navigation -->
-  <nav class="d-flex p-2 mx-auto justify-content-between align-items-center">
-
-    <img class="logo-width-sm p-8 mt-2 mb-2" src="images/images/logo/logo.png">
+  <nav class=" d-flex p-2 justify-content-between align-items-center grow-sm">
 
 
-    <i class="d-flex fas fa-search text-size-4xs bg-secondary p-3 align-items-center "></i>
-    <input type="text" placeholder="Search products" class=" form-control border-xs min-width-xxl text-size-xxs p-2 flex-grow ">
+    <div class="">
+    <img class="logo-width-sm p-4" src="images/images/logo/logo.png">
+  </div>
     
-  
+  <!-- Search -->
+  <div class="d-flex flex-grow order-1 heading-xxs-width">
+    <i class="d-flex fas fa-search text-size-3xs bg-secondary p-3 align-items-center border-xs"></i>
+    <input type="text" placeholder="Search products" class="  border-xs flex-grow text-size-xxs p-2 text-secondary ">
+  </div>
+ 
       <section class="d-flex">
       
           <a href="#"class=" text-decoration-none position-relative border-line-right">
@@ -91,77 +99,80 @@
         <div class="d-flex text-size-xxs justify-content-center text-decoration-none text-dark text-uppercase">0</div>
    
     </a>
-   
+  
       </section>
-  </nav>
+    
+    </nav>
   <hr color="green" size="4">
 
   <!-- Box -->
   
-  <div class="">
+  <nav class="d-flex wrap-sm">
   
-    <aside class="d-flex pr-4 p-4" role="navigation box">
-      <ul class=" mt-6 ml-4 hide-bullet-list box justify-content-between border-radius">
+    <aside class="d-flex pr-4 p-4 text-size-xs grow-sm align-sm-center " role="navigation box">
+      <ul class=" mt-4 hide-bullet-list box flex-grow border-radius heading-xxs-width text-size-xs align-items-center">
         <li class="border-bottom-xs px-4 py-4 pb-2 pt-2">
-          <a href="#" class="fas fa-hdd text-info pr-3 text-decoration-none"></a><a href="#"
-            class="text-dark text-decoration-none text-bold"> Computers & Accessories</a>
+          <a href="#" class="fas fa-hdd text-info pr-3 text-decoration-none "></a><a href="#"
+            class="text-dark text-decoration-none  mr-2"> Computers & Accessories</a>
         </li>
-        <li class="border-bottom-xs px-4 py-4 pb-2 pt-2">
+        <li class="border-bottom-xs px-4 py-4 pb-2 pt-2 ">
           <a href="#" class="fas fa-tv text-info pr-2 text-decoration-none"></a><a href="#"
-            class="text-dark text-decoration-none text-bold"> TV, Video & Audio</a>
+            class="text-dark text-decoration-none mr-2"> TV, Video & Audio</a>
         </li>
-        <li class="border-bottom-xs px-4 py-4 pb-2 pt-2">
+        <li class="border-bottom-xs px-4 py-4 pb-2 pt-2 ">
           <a href="#" class="fas fa-mobile-alt text-info text-decoration-none pr-2"></a><a href="#"
-            class="text-dark text-decoration-none text-bold"> Smartphones & Tablets</a>
+            class="text-dark text-decoration-none  mr-2"> Smartphones & Tablets</a>
         </li>
         <li class="border-bottom-xs px-4 py-4 pb-2 pt-2">
           <a href="#" class="fas fa-camera-retro text-info text-decoration-none pr-2"></a>
-          <a href="#" class="text-dark text-decoration-none text-bold"> Photo Cameras</a>
+          <a href="#" class="text-dark text-decoration-none  mr-2"> Photo Cameras</a>
         </li>
         <li class="border-bottom-xs px-4 py-4 pb-2 pt-2">
           <a href="#" class="fas fa-video text-info text-decoration-none pr-2"> </a><a href="#"
-            class="text-dark text-decoration-none text-bold"> Video Cameras</a>
+            class="text-dark text-decoration-none  mr-2"> Video Cameras</a>
         </li>
         <li class="border-bottom-xs px-4 py-4 pb-2 pt-2">
           <a href="#" class="fas fa-headphones text-info text-decoration-none pr-2"></a><a href="#"
-            class="text-dark text-decoration-none text-bold"> Headphones</a>
+            class="text-dark text-decoration-none  mr-2"> Headphones</a>
         </li>
         <li class="border-bottom-xs px-4 py-4 pb-2 pt-2">
           <a href="#" class="fas fa-clock text-info text-decoration-none pr-2"></a><a href="#"
-            class="text-dark text-decoration-none text-bold"> Wearable Electronics</a>
+            class="text-dark text-decoration-none  mr-2"> Wearable Electronics</a>
         </li>
         <li class="border-bottom-xs px-4 py-4 pb-2 pt-2">
           <a href="#" class="fas fa-images text-info text-decoration-none pr-2"></a><a href="#"
-            class="text-dark text-decoration-none text-bold"> Printers & Ink</a>
+            class="text-dark text-decoration-none  mr-2"> Printers & Ink</a>
         </li>
         <li class="border-bottom-xs px-4 py-4 pb-2 pt-2">
           <a href="#" class="fas fa-gamepad text-info text-decoration-none pr-2"></a><a href="#"
-            class="text-dark text-decoration-none text-bold"> Video Games</a>
+            class="text-dark text-decoration-none mr-2"> Video Games</a>
         </li>
         <li class="border-bottom-xs px-4 py-4 pb-2 pt-2">
           <a href="#" class="fas fa-volume-down text-info text-decoration-none pr-2"></a><a href="#"
-            class="text-dark text-decoration-none text-bold"> Speakers & Home Music</a>
+            class="text-dark text-decoration-none  mr-2"> Speakers & Home Music</a>
         </li>
         <li class="border-bottom-xs px-4 py-4 pb-2 pt-2">
           <a href="#" class="fas fa-server text-info text-decoration-none pr-2"></a><a href="#"
-            class="text-dark text-decoration-none text-bold"> HDD / SSD Data Storage</a>
+            class="text-dark text-decoration-none  mr-2"> HDD / SSD Data Storage</a>
         </li>
       </ul>
   
+   
 
+    </aside>
       
       <!-- Products -->
   
-<section class="d-flex flex-wrap ">
-      <div class="d-flex justify-content-between flex-xs-column overflow-hidden justify-content-center m-6 card-width box-1 position-relative border-radius border-sm mb-15">
+    <section class="d-flex flex-wrap  align-sm-center img-new-adjust mt-4">
+
+      <div class="d-flex justify-content-between flex-xs-column overflow-hidden heading-xxs-width justify-content-center m-4 box-1 position-relative border-sm ">
       
-        
+
         <div>
           <div 
-          class="position-absolute bg-warning text-size-xs text-bold border-radius p-1">60%
-        </div>
+          class="position-absolute bg-warning text-size-xs text-bold border-radius p-1">30%</div>
             
-          <img src="images/images/products/AsusLaptop.jpg" class ="img-lg-width mt-8 ml-4 border-radius " alt="Asus Laptop">
+          <img src="images/images/products/AsusLaptop.jpg" class ="img-lg-width mt-8 ml-4 border-radius" alt="Asus Laptop">
           </div>
       
         
@@ -169,43 +180,41 @@
           <div class="pt-2 d-flex justify-content-between text-decoration-none text-dark">
          
           <a href="#" class="text-decoration-none">   
-          <h3 class="text-dark">Lenovo Legion 14"</h3>
+          <h3 class="text-dark">Lenovo Legion</h3>
          </a>
           
           <a href="#"><i class="far fa-heart text-success"></i></a>
         </div>
          
           <div class="text-cozy text-size-xs">
-          Computers & Accessories
+            Computers & Accessories
           </div>
           
           <div class="text-size-xs mt-2 mb-2 text-success">
-           $1963
+           $1236
            </div>
         
           <h3 class="text-size-xs text-success">sum dolor sit amet, consectetur adpisicing elit, sed do eismod tempor incidicun </h3>
         
           <div class="d-flex justify-content-between pt-2 mb-2">
             <a href="#"><i class="fas fa-shopping-cart text-success"></i></a>
-            <div><a class="mr-2 mb-2 text-decoration-none text-success" href="#">4.6<i class="fas fa-star ml-2"></i></a></div>
+            <div><a class="mr-2 mb-2 text-decoration-none text-success" href="#">4.<i class="fas fa-star ml-2"></i></a></div>
 
        </div>
 
-        
       
          </div>
-             </div>
-       
-          
+
+        </div>
      
-             <div class="d-flex justify-content-between flex-xs-column overflow-hidden justify-content-center m-6 card-width box-1 position-relative border-sm">
+             <div class="d-flex justify-content-between flex-xs-column overflow-hidden heading-xxs-width justify-content-center m-4 box-1 position-relative border-sm ">
       
 
               <div>
                 <div 
-                class="position-absolute bg-warning text-size-xs text-bold border-radius">30%</div>
+                class="position-absolute bg-warning text-size-xs text-bold border-radius p-1">30%</div>
                   
-                <img src="images/images/products/05.jpg" class ="img-lg-width mt-8 ml-4 border-radius" alt="Asus Laptop">
+                <img src="images/images/products/05.jpg" class ="img-lg-width mt-8 ml-4 border-radius " alt="Asus Laptop">
                 </div>
             
               
@@ -242,7 +251,7 @@
              
       
         
-      <div class="d-flex justify-content-between flex-xs-column overflow-hidden justify-content-center m-6 card-width box-1 position-relative border-sm">
+      <div class="d-flex justify-content-between flex-xs-column overflow-hidden justify-content-center heading-xxs-width m-4  box-1 position-relative border-sm">
       
 
         <div>
@@ -286,7 +295,7 @@
        
     
         
-             <div class="d-flex justify-content-between flex-xs-column overflow-hidden justify-content-center m-6 card-width box-1 position-relative border-sm">
+             <div class="d-flex justify-content-between flex-xs-column overflow-hidden justify-content-center m-4 heading-xxs-width  box-1 position-relative border-sm">
       
 
               <div>
@@ -330,7 +339,7 @@
                    </div>
              
   
-                   <div class="d-flex justify-content-between flex-xs-column overflow-hidden justify-content-center m-6 card-width box-1 position-relative border-sm">
+                   <div class="d-flex justify-content-between flex-xs-column overflow-hidden justify-content-center m-4 heading-xxs-width  box-1 position-relative border-sm">
       
 
                     <div>
@@ -374,7 +383,7 @@
                          </div>
                    
        
-                         <div class="d-flex justify-content-between flex-xs-column overflow-hidden justify-content-center m-6 card-width box-1 position-relative border-sm">
+                         <div class="d-flex justify-content-between flex-xs-column overflow-hidden justify-content-center m-4 heading-xxs-width box-1 position-relative border-sm">
       
 
                           <div>
@@ -416,13 +425,13 @@
                         
                                  </div>
                                </div>
-</section>
 
-</aside>
 
-</div>
+                              
 
-<hr color="green" size="4">
+        </section>
+     
+      </nav>
 
 
 </body>
