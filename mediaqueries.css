@@ -5,6 +5,7 @@
 @media only screen and (max-width:  104,9375em){/*1100px/16px = 68.75em*/
     html{font-size: 50%;} /*texten ändras under 1100px när du "Zoomar ut" alltså överlappar inte texten / iconerna varandra */
     .img-sm-width{width: 50% !important;}
+    
   }
 @media only screen and (max-width:  85,375em){/*1100px/16px = 68.75em*/
     html{font-size: 50%;} /*texten ändras under 1100px när du "Zoomar ut" alltså överlappar inte texten / iconerna varandra */
@@ -70,7 +71,8 @@
       }
     
     @media screen and (max-width: 37.5em){/*600px / 16px = 37.5em*/ /*Samma som ovanstående fast 100% när vi går under 600px. */
-        .d-sm-none{display: none !important;} /*Gör så att vår första navigation på toppen av sidan försvinner under 600px */ 
+       .align-image-center{display: block; margin: 0 auto;}  
+      .d-sm-none{display: none !important;} /*Gör så att vår första navigation på toppen av sidan försvinner under 600px */ 
         .d-sm-block{margin-bottom: var(--distance-13);} /*när den e smal ska den visas som block*/
          nav div a:not(:first-child){margin-left: 2rem;} /*minska avståndet mellan knapparna*/
         .f-width{max-width: 100% !important;}
@@ -94,6 +96,7 @@
         @media screen and (max-width: 48.75em) {
           .wrap-sm {
             flex-wrap: wrap !important;
+         
           }
           .grow-sm {
             flex-grow: 1;
@@ -110,8 +113,36 @@
               padding-top: 1rem;
             }
           }
-      
+          @media screen and (max-width: 28.75em) {
+            .order-1 {
+              order: 1;
+              flex: 1 0 100%;
+              display: flex;
+              padding-top: 1rem;
+            }
+          }
+
         }
 
-       
+
+
+
+        
+        @media screen and (max-width: 48.75em) {
+          .position-relative1{margin-right: 350px; margin-top: 10px;  position: relative ;}
+           
+
+          .position-absolute1{position: absolute ;}}
+         
+         
+         
+         
+          @media screen and (max-width: 28.75em) {
+            .position-relative2{ margin-left: 340px; margin-bottom: 45px; position: relative ;
+            }
+             
+  
+            .position-absolute2{margin-top: 50px; position: absolute ;}}
+         
+        
         
