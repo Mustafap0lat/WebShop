@@ -18,23 +18,64 @@
 </head>
 
 <body>
-  <!-- Navigation -->
+ 
   <header>
     <!-- Colored Bar -->
-    <div class="d-flex bg-dark p-2 justify-content-between align-items-center">
-     
+  
+    <div class="d-flex bg-dark  justify-content-between align-items-center text-white">
+      
       <!-- Button -->
-      <button class="text-border btn-dark p-2 border-small-white">
-        <div class="mx-2 text-size-xxs align-items-center">
-          <i class="fa fa-user text-size-xxs"></i>
-          <span class="icon-form-control text-size-xs mr-2 d-sm-none">Jane Doe</span>
-          <i class="fas fa-caret-down"></i>
-        </div>
+  
+      <nav class="d-flex">
+         
+        <div class="dropdown">
        
         
-      </button>
+          <div class="products justify-content-center align-items-center mb-1 p-1">
+        
+            <button><i class="fa fa-user mr-2 text-size-xxs "></i></button>  
+            
+
+            <ul>
+              <li><a href="#">John Doe</a></li>
+              <li><a href="#">Little John</a></li>
+              <li><a href="#">Carl Krantz</a></li>
+              <li><a href="#">Julia Krantz</a></li>
+            </ul>
+            </div>
+       
+        <div class="products">
+           
+          
+            <button class="d-sm-none">Jane</button>
+            
+            <ul>
+              <li><a href="#">John Doe</a></li>
+              <li><a href="#">Little John</a></li>
+              <li><a href="#">Carl Krantz</a></li>
+              <li><a href="#">Julia Krantz</a></li>
+            </ul>
+          </div>
+
+          
+          <div class="products justify-content-center align-items-center  p-1">
+            
+            <button><i class="fas fa-caret-down mr-2 text-size-xxs "></i></button>  
+        
+            
+            <ul>
+              <li><a href="#">John Doe</a></li>
+              <li><a href="#">Little John</a></li>
+              <li><a href="#">Carl Krantz</a></li>
+              <li><a href="#">Julia Krantz</a></li>
+            </ul>
+            </div>
+      </nav>
+   
+
+
     
-      <!-- Header -->
+      <!-- Header Nav-->
       <div class="d-flex justify-content-between justify-content-center align-items-center mx-auto mb-2 d-sm-none p-2">
         <section>
         <div class="d-flex text-border align-items-center">
@@ -45,17 +86,17 @@
             <i class="fas fa-envelope ml-4"></i>
             <span class="text-size-xs">info@mystore.com</span>
         </div>
-      </div>
+        </div>
 
-      <!-- Icons -->
-      <div class="p-2">
+        <!-- Icons -->
+        <div class="p-2">
         <a href="#"><i class="fab fa-facebook-square mr-1 text-border"></i></a>
         <a href="#"><i class="fab fa-twitter mr-1 text-border"></i></a>
         <a href="#"><i class="fab fa-instagram mr-1 text-border"></i></a>
         <a href="#"><i class="fab fa-pinterest-p mr-1 text-border"></i></a>
-      </div>
+       </div>
      
-      </section>
+   
     </div>
   </header>
 
@@ -63,9 +104,9 @@
   <nav class=" d-flex p-2 justify-content-between align-items-center grow-sm">
 
 
-    <div class="">
+   
     <img class="logo-width-sm p-4" src="images/images/logo/logo.png">
-  </div>
+  
     
   <!-- Search -->
   <div class="d-flex flex-grow order-1 heading-xxs-width">
@@ -75,9 +116,18 @@
  
       <section class="d-flex">
       
-          <a href="#"class=" text-decoration-none position-relative border-line-right">
+          
+        <a href="#"class=" text-decoration-none flex-column border-line-right d-sm-block1 d-none">
+          <div class=" mx-6 "> <i class="fa fa-bars text-dark mt-2 text-size-lg  "></i></div>
+          <div class="d-flex text-size-xxs justify-content-center text-decoration-none text-dark text-uppercase">Menu</div>
+      
+        </a>
+        
+        
+        
+        <a href="#"class="text-decoration-none position-relative border-line-right">
             <div class=" mx-6 "> <i class="fas fa-heart text-dark mt-2 text-size-lg  "></i></div>
-            <span class="text-white text-size-3xs position-absolute icon-badge border-small-white circle bg-lime mt-2 mx-4">4</span>
+            <span class="text-white text-size-3xs position-absolute icon-badge border-small-white circle bg-lime mt-2 mx-4">5</span>
             <div class="d-flex text-size-xxs justify-content-center text-decoration-none text-dark text-uppercase">Favs</div>
         
           </a>
@@ -111,9 +161,9 @@
   
     <aside class="d-flex pr-4 p-4 text-size-xs grow-sm align-sm-center " role="navigation box">
       <ul class=" mt-4 hide-bullet-list box flex-grow border-radius heading-xxs-width text-size-xs align-items-center">
-        <li class="border-bottom-xs px-4 py-4 pb-2 pt-2">
-          <a href="#" class="fas fa-hdd text-info pr-3 text-decoration-none "></a><a href="#"
-            class="text-dark text-decoration-none  mr-2"> Computers & Accessories</a>
+        <li class="border-bottom-xs px-4 py-4 pb-2">
+          <a href="#" class="fas fa-hdd text-info pr-3 text-decoration-none"></a><a href="#"
+            class="text-dark text-decoration-none mr-2"> Computers & Accessories</a>
         </li>
         <li class="border-bottom-xs px-4 py-4 pb-2 pt-2 ">
           <a href="#" class="fas fa-tv text-info pr-2 text-decoration-none"></a><a href="#"
@@ -163,7 +213,7 @@
       
       <!-- Products -->
   
-    <section class="d-flex flex-wrap  align-sm-center img-new-adjust mt-4">
+    <section class="d-flex flex-wrap align-sm-center img-new-adjust mt-4">
 
       <div class="d-flex justify-content-between flex-xs-column overflow-hidden heading-xxs-width justify-content-center m-4 box-1 position-relative border-sm ">
       

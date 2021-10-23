@@ -2,6 +2,10 @@
 
 
 
+@media only screen and (max-width:  104,9375em){/*1100px/16px = 68.75em*/
+    html{font-size: 50%;} /*texten ändras under 1100px när du "Zoomar ut" alltså överlappar inte texten / iconerna varandra */
+    .img-sm-width{width: 50% !important;}
+  }
 @media only screen and (max-width:  85,375em){/*1100px/16px = 68.75em*/
     html{font-size: 50%;} /*texten ändras under 1100px när du "Zoomar ut" alltså överlappar inte texten / iconerna varandra */
   }
@@ -15,7 +19,7 @@
     .heading-xxs-width{width: 100% !important;}
     .img-new-adjust {  width: 75rem;
       height: 20rem !important;}
-      
+      .d-sm-block1{display: block !important;}
   }
   @media only screen and (max-width: 40em){/*Samsung galaxy 5 Liggandes*/
     html{font-size: 80%;} /*texten ändras under 1100px när du "Zoomar ut" alltså överlappar inte texten / iconerna varandra */
@@ -26,6 +30,10 @@
       height: 12rem !important;}
  
   }
+  @media only screen and (max-width: 40em){/*1100px/16px = 68.75em*/
+    .d-sm-block1{display: block !important;}
+    }
+  
     @media only screen and (max-width: 37.5em){/*1100px/16px = 68.75em*/
       html{font-size: 70%;} /*texten ändras under 1100px när du "Zoomar ut" alltså överlappar inte texten / iconerna varandra */
       .align-sm-center {align-items: center;}  
@@ -44,10 +52,16 @@
       .align-sm-center {align-items: center;}    
         .img-new-adjust {  width: 29rem;
           height: 12rem !important;}
+          .d-sm-block1{display: block !important;}
+        }
+    
+  
+    @media only screen and (max-width: 40em ma){/*1100px/16px = 68.75em*/
+      .d-sm-block1{display: block !important;}
       }
     
+
       }
-    
     
   
       @media screen and (max-width:  56.25em){ /*900px/16px = 56.25em*/
