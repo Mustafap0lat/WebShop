@@ -2,73 +2,64 @@
 
 
 
-@media only screen and (max-width:  104,9375em){/*1100px/16px = 68.75em*/
-    html{font-size: 50%;} /*texten ändras under 1100px när du "Zoomar ut" alltså överlappar inte texten / iconerna varandra */
-    .img-sm-width{width: 50% !important;}
+@media only screen and (max-width:  105em){
+    html{font-size: 70%;} 
+    .img-sm-width{width: 50% ;}
     
   }
-@media only screen and (max-width:  85,375em){/*1100px/16px = 68.75em*/
-    html{font-size: 50%;} /*texten ändras under 1100px när du "Zoomar ut" alltså överlappar inte texten / iconerna varandra */
-  }
+@media only screen and (max-width:  84,6875em){
+}
 
-@media only screen and (max-width:  78,125em){/*1100px/16px = 68.75em*/
-    html{font-size: 100%;} /*texten ändras under 1100px när du "Zoomar ut" alltså överlappar inte texten / iconerna varandra */
-  }
-  @media only screen and (max-width: 48.75em){/*1100px/16px = 68.75em*/
-    html{font-size: 70%;} /*texten ändras under 1100px när du "Zoomar ut" alltså överlappar inte texten / iconerna varandra */
+  @media only screen and (max-width: 51.875em){
+    html{font-size: 70%;} 
     .align-sm-center {align-items: center;}  
     .heading-xxs-width{width: 100% !important;}
     .img-new-adjust {  width: 75rem;
       height: 20rem !important;}
-      .d-sm-block1{display: block !important;}
-  }
+      .f-block{display: block !important;} /*blockerar bilden*/
+     .text-adjustment{align-self: center;} /*[SELF] justerar texten så den hamnar i mitten vid denna storlek skit bra!*/
+  
+    }
   @media only screen and (max-width: 40em){/*Samsung galaxy 5 Liggandes*/
-    html{font-size: 80%;} /*texten ändras under 1100px när du "Zoomar ut" alltså överlappar inte texten / iconerna varandra */
+    html{font-size: 80%;} 
     .align-sm-center {align-items: center;}  
     .heading-xxs-width{width: 100% !important;}
     .d-sm-none{display: none !important;}
     .img-new-adjust {  width: 75rem;
       height: 12rem !important;}
- 
+      .logo-width-sm{width: 100px;}
   }
-  @media only screen and (max-width: 40em){/*1100px/16px = 68.75em*/
-    .d-sm-block1{display: block !important;}
-    }
   
-    @media only screen and (max-width: 37.5em){/*1100px/16px = 68.75em*/
-      html{font-size: 70%;} /*texten ändras under 1100px när du "Zoomar ut" alltså överlappar inte texten / iconerna varandra */
+    @media only screen and (max-width: 37.5em){
+      html{font-size: 80%;} 
       .align-sm-center {align-items: center;}  
       .img-new-adjust {  width: 75rem;
         height: 12rem !important;}
     }
-    @media only screen and (max-width: 29.5em){/*1100px/16px = 68.75em*/
-      html{font-size: 70%;} /*texten ändras under 1100px när du "Zoomar ut" alltså överlappar inte texten / iconerna varandra */
+    @media only screen and (max-width: 29.5em){
+      html{font-size: 80%;} 
       .align-sm-center {align-items: center;}    
       .img-new-adjust {  width: 37.5rem;
         height: 12rem !important;}
-    
+
+    @media only screen and (max-width: 29.5em){
+            .logo-width-sm{width: 100px; margin-bottom: 8px;}
+         }
+        
   
-    @media only screen and (max-width: 22.5em){/*1100px/16px = 68.75em*/
-      html{font-size: 80%;} /*texten ändras under 1100px när du "Zoomar ut" alltså överlappar inte texten / iconerna varandra */
+    @media only screen and (max-width: 22.5em){
+      html{font-size: 80%;} 
       .align-sm-center {align-items: center;}    
         .img-new-adjust {  width: 29rem;
           height: 12rem !important;}
-          .d-sm-block1{display: block !important;}
+          
         }
-    
-  
-    @media only screen and (max-width: 40em ma){/*1100px/16px = 68.75em*/
-      .d-sm-block1{display: block !important;}
-      }
     
 
       }
-    
   
-      @media screen and (max-width:  56.25em){ /*900px/16px = 56.25em*/
-        .f-width{max-width: 50% !important;}  /*Featursen ska förändras som vi satt till 33% i Layout. när vi går under 900px. Featursen blir 50% istället för 33% */
         
-      }
+      
     
     @media screen and (max-width: 37.5em){/*600px / 16px = 37.5em*/ /*Samma som ovanstående fast 100% när vi går under 600px. */
        .align-image-center{display: block; margin: 0 auto;}  
@@ -76,73 +67,65 @@
         .d-sm-block{margin-bottom: var(--distance-13);} /*när den e smal ska den visas som block*/
          nav div a:not(:first-child){margin-left: 2rem;} /*minska avståndet mellan knapparna*/
         .f-width{max-width: 100% !important;}
-        .mb-sm-12{ margin-bottom: var(--distance-13);} /*Vi la den här för den kommer bara användas när ovanstående gällder*/
-        .flex-sm-column{flex-direction: column;}  /*denna Selector gör så "Circles" läggs som en column när vi minskar*/
+        .mb-sm-12{ margin-bottom: var(--distance-13);} /*Vi la den här för den kommer bara användas när ovanstående gäller*/
+        .flex-sm-column{flex-direction: column;}  /*denna selector lägger "itemet" som en column när vi minskar*/
          footer > div > div{max-width: 100% !important;}  /*Första diven i footer och första diven i den sätter vi max width 100%.*/
         .mt-sm-12{margin-top: var(--distance-13);} /*ger utrymme när vi minskar*/
         .img-sm-width{width: 150% !important;} /*gör bilderna större när vi minskar*/
           
       }  
         
-        @media screen and (max-width: 37.5em){/*500px / 16px = 31.25em*/
+        @media screen and (max-width: 37.5em){
           .flex-xs-column{flex-direction: column;}  /*bilderna lägger sig ovanför "i en column" under 500px, överskriver bredden i Classes Card, de byts till stående format*/
           .img-xs-width{max-width: 150% !important;}
     }
     
-        @media screen and (max-width: 37.5em){/*400px / 16px = 25em*/
+        @media screen and (max-width: 37.5em){
           .heading-xxs-width{width: 100% !important;}
         }
 
-        @media screen and (max-width: 48.75em) {
-          .wrap-sm {
+        @media screen and (max-width: 51.875em) { /*wrappar till columner*/
+          .f-wrap {
             flex-wrap: wrap !important;
          
           }
-          .grow-sm {
+          .trans-c {
             flex-grow: 1;
             display: flex;
             flex-direction: column;
       
           }
       
-          @media screen and (max-width: 48.75em) {
-            .order-1 {
+          @media screen and (max-width: 51.875em) { /*positionerar nedanför, i detta fall searchbaren*/
+            .move-d {
               order: 1;
               flex: 1 0 100%;
               display: flex;
               padding-top: 1rem;
             }
           }
-          @media screen and (max-width: 28.75em) {
-            .order-1 {
-              order: 1;
-              flex: 1 0 100%;
-              display: flex;
-              padding-top: 1rem;
-            }
-          }
+      
 
         }
 
-
-
-
         
-        @media screen and (max-width: 48.75em) {
-          .position-relative1{margin-right: 350px; margin-top: 10px;  position: relative ;}
+        @media screen and (max-width: 51.875em) { /*flyttar enligt angivna parametrar under den angivna bredden, i detta fall iconen */
+          .position-relative1{margin-right: 350px; margin-top: 10px;  position: relative}
            
 
-          .position-absolute1{position: absolute ;}}
+          .position-absolute1{position: absolute;}}
          
          
          
          
-          @media screen and (max-width: 28.75em) {
-            .position-relative2{ margin-left: 340px; margin-bottom: 45px; position: relative ;
+          @media screen and (max-width: 28.75em) { /*-ll- fast i detta fall ikonerna*/
+         
+            .position-relative2{ margin-left: 340px; margin-bottom: 45px; position: relative;
             }
              
+            
   
-            .position-absolute2{margin-top: 50px; position: absolute ;}}
+            .position-absolute2{margin-top: 50px; position: absolute; }}
          
         
         

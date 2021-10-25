@@ -9,7 +9,7 @@
      --color-warning: orange;
      --color-danger: orangered;
      --color-light: lightcyan;
-     --color-dark: #343a40;
+     --color-dark: #42474d;
      --color-white: white;
      --color-cyan: cyan;
      --color-lime: rgb(125, 218, 125);
@@ -102,7 +102,7 @@
  }
  
  html {
-     box-sizing: border-box;
+     box-sizing: border-box; /*gör så boxen i detta fall html boxen är dynamisk*/
      font-size: 62.5%; /*1rem = 10px, 10px/16px=62.5%*/
  
  }

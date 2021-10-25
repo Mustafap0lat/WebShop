@@ -31,7 +31,7 @@
         <div class="dropdown">
        
         
-          <div class="products justify-content-center align-items-center mb-1 p-1">
+          <div class="accounts justify-content-center align-items-center mb-1 p-1">
         
             <button><i class="fa fa-user mr-2 text-size-xxs "></i></button>  
             
@@ -44,7 +44,7 @@
             </ul>
             </div>
        
-        <div class="products">
+        <div class="accounts">
            
           
             <button class="d-sm-none">Jane</button>
@@ -58,7 +58,7 @@
           </div>
 
           
-          <div class="products justify-content-center align-items-center p-1 mb-1">
+          <div class="accounts justify-content-center align-items-center p-1 mb-1">
             
             <button><i class="fas fa-caret-down mr-2 text-size-xxs "></i></button>  
         
@@ -101,7 +101,7 @@
   </header>
 
   <!-- Navigation -->
-  <nav class=" d-flex p-2 justify-content-between align-items-center grow-sm">
+  <nav class=" d-flex p-2 justify-content-between align-items-center trans-c">
 
 
    <div class="d-flex position-relative1 position-relative2">
@@ -109,7 +109,7 @@
   </div>
     
   <!-- Search -->
-  <div class="d-flex flex-grow order-1 order-2  heading-xxs-width">
+  <div class="d-flex flex-grow move-d heading-xxs-width">
     <i class="d-flex fas fa-search text-size-3xs bg-secondary p-3 align-items-center border-xs"></i>
     <input type="text" placeholder="Search products" class="  border-xs flex-grow text-size-xxs p-2 text-secondary ">
   </div>
@@ -117,7 +117,7 @@
       <section class="d-flex position-absolute1 position-absolute2">
       
           
-        <a href="#"class=" text-decoration-none flex-column border-line-right d-sm-block1 d-none">
+        <a href="#"class=" text-decoration-none flex-column border-line-right f-block s-none">
           <div class=" mx-6 "> <i class="fa fa-bars text-dark mt-2 text-size-lg "></i></div>
           <div class="d-flex text-size-xxs justify-content-center text-decoration-none text-dark text-uppercase">Menu</div>
       
@@ -152,14 +152,16 @@
       </section>
     
     </nav>
-  <hr color="green" size="4">
+ 
+    <!--Colored line-->
+    <hr color="green" size="4">
 
-  <!-- Box -->
+  <!--li Box -->
   
-  <nav class="d-flex wrap-sm">
+  <nav class="d-flex f-wrap ">
   
-    <aside class="d-flex pr-4 p-4 text-size-xs grow-sm align-sm-center " role="navigation box">
-      <ul class=" mt-4 hide-bullet-list box flex-grow border-radius heading-xxs-width text-size-xs align-items-center">
+    <aside class="d-flex pr-4 p-4 text-size-xs trans-c align-sm-center " role="navigation box ">
+      <ul class=" mt-4 hide-bullet-list box flex-grow border-radius heading-xxs-width text-size-xs align-items-center h-effect">
         <li class="border-bottom-xs px-4 py-4 pb-2">
           <a href="#" class="fas fa-hdd text-info pr-3 text-decoration-none"></a><a href="#"
             class="text-dark text-decoration-none mr-2"> Computers & Accessories</a>
@@ -212,27 +214,34 @@
       
       <!-- Products -->
   
-    <section class="d-flex flex-wrap align-sm-center img-new-adjust mt-4">
+    <section class="d-flex flex-wrap align-sm-center img-new-adjust mt-4 ">
 
       <div class="d-flex justify-content-between flex-xs-column overflow-hidden heading-xxs-width justify-content-center m-4 box-1 position-relative border-sm ">
       
 
         <div>
           <div 
-          class="position-absolute bg-warning text-size-xs text-bold border-radius p-1">30%</div>
-            
+          class="position-absolute bg-warning text-size-xs text-bold border-radius p-1 ">30%</div>
+            <div class=" z-img">
           <img src="images/images/products/AsusLaptop.jpg" class ="img-lg-width mt-8 ml-4 border-radius align-image-center" alt="Asus Laptop">
-          </div>
+        </div>  
+        </div>
       
         
-      <div class="flex-grow ml-2 text-decoraction-none">   
-          <div class="pt-2 d-flex justify-content-between text-decoration-none text-dark ">
+          <!--Product info-->
+     
+          
+          <div class="flex-grow ml-2 text-decoraction-none text-adjustment">   
+          <div class="pt-2 d-flex justify-content-between text-decoration-none text-dark">
          
-          <a href="#" class="text-decoration-none ">   
+          <a href="#" class="text-decoration-none">   
           <h3 class="text-dark">Lenovo Legion</h3>
          </a>
           
+         <div class="h-effect-ih">
           <a href="#"><i class="far fa-heart text-success"></i></a>
+         </div>
+        
         </div>
          
           <div class="text-cozy text-size-xs">
@@ -245,15 +254,16 @@
         
           <h3 class="text-size-xs text-success">sum dolor sit amet, consectetur adpisicing elit, sed do eismod tempor incidicun </h3>
         
-          <div class="d-flex justify-content-between pt-2 mb-2">
-            <a href="#"><i class="fas fa-shopping-cart text-success"></i></a>
-            <div><a class="mr-2 mb-2 text-decoration-none text-success" href="#">4.<i class="fas fa-star ml-2"></i></a></div>
+          <div class="d-flex justify-content-between pt-4 mb-2">
+            <div class="h-effect-ihs"><a href="#"><i class="fas fa-shopping-cart text-success"></i></a></div>
+            
+            <div class="h-effect-is"><a class="mr-2 mb-2 text-decoration-none text-success" href="#">4.6<i class="far fa-star ml-2"></i></a></div>
 
        </div>
 
       
          </div>
-
+        
         </div>
      
              <div class="d-flex justify-content-between flex-xs-column overflow-hidden heading-xxs-width justify-content-center m-4 box-1 position-relative border-sm ">
@@ -267,14 +277,17 @@
                 </div>
             
               
-            <div class="flex-grow ml-2 text-decoraction-none">   
+            <div class="flex-grow ml-2 text-decoraction-none text-adjustment">   
                 <div class="pt-2 d-flex justify-content-between text-decoration-none text-dark">
                
                 <a href="#" class="text-decoration-none ">   
-                <h3 class="text-dark ">Samsung Watch</h3>
+                <h3 class="text-dark">Samsung Watch</h3>
                </a>
                 
+               <div class="h-effect-ih">
                 <a href="#"><i class="far fa-heart text-success"></i></a>
+               </div>
+              
               </div>
                
                 <div class="text-cozy text-size-xs">
@@ -287,9 +300,9 @@
               
                 <h3 class="text-size-xs text-success">sum dolor sit amet, consectetur adpisicing elit, sed do eismod tempor incidicun </h3>
               
-                <div class="d-flex justify-content-between pt-2 mb-2">
-                  <a href="#"><i class="fas fa-shopping-cart text-success"></i></a>
-                  <div><a class="mr-2 mb-2 text-decoration-none text-success" href="#">4.3<i class="fas fa-star ml-2"></i></a></div>
+                <div class="d-flex justify-content-between pt-4 mb-2">
+                  <div class="h-effect-ihs "><a href="#"><i class="fas fa-shopping-cart text-success"></i></a></div>
+                  <div class="h-effect-is"><a class="mr-2 mb-2 text-decoration-none text-success" href="#">4.3<i class="far fa-star ml-2"></i></a></div>
       
              </div>
       
@@ -300,7 +313,7 @@
              
       
         
-      <div class="d-flex justify-content-between flex-xs-column overflow-hidden justify-content-center heading-xxs-width m-4  box-1 position-relative border-sm">
+      <div class="d-flex justify-content-between flex-xs-column overflow-hidden justify-content-center heading-xxs-width m-4  box-1  position-relative border-sm">
       
 
         <div>
@@ -311,14 +324,17 @@
           </div>
       
         
-      <div class="flex-grow ml-2 text-decoraction-none">   
+      <div class="flex-grow ml-2 text-decoraction-none text-adjustment">   
           <div class="pt-2 d-flex justify-content-between text-decoration-none text-dark">
          
           <a href="" class="text-decoration-none">   
           <h3 class="text-dark">Apple Watch</h3>
          </a>
           
-          <a href=""><i class="far fa-heart text-success"></i></a>
+         <div class="h-effect-ih">
+          <a href="#"><i class="far fa-heart text-success"></i></a>
+         </div>
+        
         </div>
          
           <div class="text-cozy text-size-xs">
@@ -331,9 +347,9 @@
         
           <h3 class="text-size-xs text-success">sum dolor sit amet, consectetur adpisicing elit, sed do eismod tempor incidicun </h3>
         
-          <div class="d-flex justify-content-between pt-2 mb-2">
-            <a href="#"><i class="fas fa-shopping-cart text-success"></i></a>
-            <div><a class="mr-2 mb-2 text-decoration-none text-success" href="#">3.9<i class="fas fa-star ml-2"></i></a></div>
+          <div class="d-flex justify-content-between pt-4 mb-2">
+            <div class="h-effect-ihs "><a href="#"><i class="fas fa-shopping-cart text-success"></i></a></div>
+            <div class="h-effect-is"><a class="mr-2 mb-2 text-decoration-none text-success" href="#">3.9<i class="far fa-star ml-2"></i></a></div>
 
                 </div>
 
@@ -344,7 +360,7 @@
        
     
         
-             <div class="d-flex justify-content-between flex-xs-column overflow-hidden justify-content-center m-4 heading-xxs-width  box-1 position-relative border-sm">
+             <div class="d-flex justify-content-between flex-xs-column overflow-hidden justify-content-center m-4 heading-xxs-width  box-1  position-relative border-sm">
       
 
               <div>
@@ -355,14 +371,16 @@
                 </div>
             
               
-            <div class="flex-grow ml-2 text-decoraction-none">   
+            <div class="flex-grow ml-2 text-decoraction-none text-adjustment">   
                 <div class="pt-2 d-flex justify-content-between text-decoration-none text-dark">
                
                 <a href="" class="text-decoration-none">   
                 <h3 class="text-dark">Samsung UHD 55"</h3>
                </a>
                 
-                <a href=""><i class="far fa-heart text-success"></i></a>
+               <div class="h-effect-ih">
+                <a href="#"><i class="far fa-heart text-success"></i></a>
+               </div>
               </div>
                
                 <div class="text-cozy text-size-xs">
@@ -375,9 +393,9 @@
               
                 <h3 class="text-size-xs text-success">sum dolor sit amet, consectetur adpisicing elit, sed do eismod tempor incidicun </h3>
               
-                <div class="d-flex justify-content-between pt-2 mb-2">
-                  <a href="#"><i class="fas fa-shopping-cart text-success"></i></a>
-                  <div><a class="mr-2 mb-2 text-decoration-none text-success" href="#">4.7<i class="fas fa-star ml-2"></i></a></div>
+                <div class="d-flex justify-content-between pt-4 mb-2">
+                  <div class="h-effect-ihs "><a href="#"><i class="fas fa-shopping-cart text-success"></i></a></div>
+                  <div class="h-effect-is"><a class="mr-2 mb-2 text-decoration-none text-success" href="#">4.7<i class="far fa-star ml-2"></i></a></div>
       
                   
                       </div>
@@ -388,7 +406,7 @@
                    </div>
              
   
-                   <div class="d-flex justify-content-between flex-xs-column overflow-hidden justify-content-center m-4 heading-xxs-width  box-1 position-relative border-sm">
+                   <div class="d-flex justify-content-between flex-xs-column overflow-hidden justify-content-center m-4 heading-xxs-width  box-1  position-relative border-sm">
       
 
                     <div>
@@ -399,14 +417,16 @@
                       </div>
                   
                     
-                  <div class="flex-grow ml-2 text-decoraction-none">   
+                  <div class="flex-grow ml-2 text-decoraction-none text-adjustment">   
                       <div class="pt-2 d-flex justify-content-between text-decoration-none text-dark">
                      
                       <a href="" class="text-decoration-none">   
                       <h3 class="text-dark">Canon EOS</h3>
                      </a>
                       
-                      <a href=""><i class="far fa-heart text-success"></i></a>
+                     <div class="h-effect-ih">
+                      <a href="#"><i class="far fa-heart text-success"></i></a>
+                     </div>
                     </div>
                      
                       <div class="text-cozy text-size-xs">
@@ -419,9 +439,9 @@
                     
                       <h3 class="text-size-xs text-success">sum dolor sit amet, consectetur adpisicing elit, sed do eismod tempor incidicun </h3>
                     
-                      <div class="d-flex justify-content-between pt-2 mb-2">
-                        <a href="#"><i class="fas fa-shopping-cart text-success"></i></a>
-                        <div><a class="mr-2 mb-2 text-decoration-none text-success" href="#">4.4<i class="fas fa-star ml-2"></i></a></div>
+                      <div class="d-flex justify-content-between pt-4 mb-2">
+                        <div class="h-effect-ihs "><a href="#"><i class="fas fa-shopping-cart text-success"></i></a></div>
+                        <div class="h-effect-is"><a class="mr-2 mb-2 text-decoration-none text-success" href="#">4.4<i class="far fa-star ml-2"></i></a></div>
             
                         
                             </div>
@@ -432,7 +452,7 @@
                          </div>
                    
        
-                         <div class="d-flex justify-content-between flex-xs-column overflow-hidden justify-content-center m-4 heading-xxs-width box-1 position-relative border-sm">
+                         <div class="d-flex justify-content-between flex-xs-column overflow-hidden justify-content-center m-4 heading-xxs-width box-1  position-relative border-sm">
       
 
                           <div>
@@ -443,14 +463,16 @@
                             </div>
                         
                           
-                        <div class="flex-grow ml-2 text-decoraction-none">   
+                        <div class="flex-grow ml-2 text-decoraction-none text-adjustment">   
                             <div class="pt-2 d-flex justify-content-between text-decoration-none text-dark">
                            
                             <a href="" class="text-decoration-none">   
                             <h3 class="text-dark">Surface Book 14 in</h3>
                            </a>
                             
-                            <a href=""><i class="far fa-heart text-success"></i></a>
+                           <div class="h-effect-ih">
+                            <a href="#"><i class="far fa-heart text-success"></i></a>
+                           </div>
                           </div>
                            
                             <div class="text-cozy text-size-xs">
@@ -463,9 +485,9 @@
                           
                             <h3 class="text-size-xs text-success">sum dolor sit amet, consectetur adpisicing elit, sed do eismod tempor incidicun </h3>
                           
-                            <div class="d-flex justify-content-between pt-2 mb-2">
+                            <div class="d-flex justify-content-between pt-4 mb-2">
                               <a href="#"><i class="fas fa-shopping-cart text-success"></i></a>
-                              <div><a class="mr-2 mb-2 text-decoration-none text-success" href="#">4.5<i class="fas fa-star ml-2"></i></a></div>
+                              <div class="h-effect-is"><a class="mr-2 mb-2 text-decoration-none text-success" href="#">4.5<i class="far fa-star ml-2"></i></a></div>
                   
                               
                                   </div>
@@ -473,16 +495,20 @@
                           
                         
                                  </div>
-                               </div>
-
+                              
+                                </div>
 
                               
+               
 
         </section>
      
+     
+
       </nav>
+      
+  
+    </body>
 
-
-</body>
 
 </html>

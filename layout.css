@@ -1,3 +1,7 @@
+ /*egen notis, använd box-sizing:border-box; Ochflexbox vid liknande projekt*/
+
+
+
 /*****************
 ***** Widths ****
 *****************/
@@ -148,8 +152,10 @@ padding: var(--distance-1) var(--distance-3);} /*gör så att "3an" hamnar upp i
 
 .hide-bullet-list{list-style: none;}
 .box {width: 25rem; height:fit-content;border: var(--border-xs);}
-.box-1{width: 45rem; height:fit-content;border: var(--border-xs);}
-.box-2{width: 25rem;}
+.box-1{width: 45rem; height:fit-content;border: var(--border-xs);} /*ANVÄND box-sixing:border-box NÄSTA gång */
+.box-2{box-sizing: border-box; border-color: tomato;} /*TESTA IMR LÄGGA BILDEN I EN TILL BOX*/
+
+
 
 /*******************
 ****** Circle *****
@@ -202,7 +208,7 @@ padding: var(--distance-1) var(--distance-3);} /*gör så att "3an" hamnar upp i
 /*****************
 **** Features ****
 *****************/
-.f-width{max-width: 33%;} /* 100/3 = 33, gör så att vi kan ha max 3 object/ikoner i rad genom att ge objektet en max bredd på 33% */
+/*.f-width{max-width: 33%;} /* 100/3 = 33, gör så att vi kan ha max 3 object/ikoner i rad genom att ge objektet en max bredd på 33% */
 
 /*****************
 **** Icons ****
@@ -240,24 +246,24 @@ padding: var(--distance-1) var(--distance-3);} /*gör så att "3an" hamnar upp i
    
   }
   
-  .dropdown {
+  .dropdown { /*ger dropp-downen sina attribut och stil, ser även till att den överlappar cointanersen under när vi öppnar den */
     height: 5vh;
     width: 60%;
     margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 1;
   }
   
-  .projects,
-  .products {
+  
+  .accounts {
     position: relative;
      
 }
   
-  .projects ul,
-  .products ul {
-    
+
+  .accounts ul { /*justerar hur layouten, hur den ska se ut, och ger den attribut. Ser även till att vi inte har några pointer events när vi hovrar under usernamnet.*/
     position: absolute;
     display: flex;
     justify-content: space-around;
@@ -274,8 +280,8 @@ padding: var(--distance-1) var(--distance-3);} /*gör så att "3an" hamnar upp i
     transform: translateY(-10px);
     transition: all 0.4s ease;
   }
-  .projects li,
-  .products li {
+ 
+  .accounts li { /*centrerar users och bredder ut bakgrundsfärgen*/
     width: 100%;
     height: 100%;
     display: flex;
@@ -283,19 +289,18 @@ padding: var(--distance-1) var(--distance-3);} /*gör så att "3an" hamnar upp i
     align-items: center;
   }
   
-  .projects li:hover,
-  .products li:hover {
-    background-color: rgb(197, 173, 181);
+  
+  .accounts li:hover { /*ger hovering style till users innuti listan*/
+    background-color: rgba(175, 231, 222, 0.623);
   }
   
-  .projects a,
-  .products a {
+
+  .accounts a { /*Ger våra users innuti listan stil*/
     color: black;
     text-decoration: none;
   }
   
-  .dropdown button,
-  .home {
+  .dropdown button { /*ger vår dropdown stil*/
     background: none;
     text-decoration: none;
     border: none;
@@ -305,18 +310,49 @@ padding: var(--distance-1) var(--distance-3);} /*gör så att "3an" hamnar upp i
   }
   
   
-  .projects button:focus + ul,
-  .products button:focus + ul {
+  
+  .accounts button:focus + ul {/*Gör så att vi kan klicka på vår user och det öppnas upp*/
 
     opacity: 1;
     pointer-events: all;
     transform: translateY(0px);
   }
-    .products
-    .projects
-    button:focus + ul{
-    opacity: 1;
-    pointer-events: all;
-    transform: translateY(0px); 
+
+  .h-effect li:hover { 
+    background-color: rgba(226, 224, 132, 0.247);
+
+  }
+  
+  .h-effect-is i:hover{ 
+    transform:scale(1);
+   color: rgb(250, 234, 7);
+  }
+
+  .h-effect-ih i:hover{ 
+    transform: scale(1);
+    color: red;
+  }
+
+  .h-effect-ihs i:hover{ 
+    transform: scale(1.5);
     
   }
+
+  .z-img img:hover{ 
+    
+    transform: scale(1.3) translateX(20px);
+    width: 200%;
+    background-position: center;
+    background-size: cover;
+    transition: 0.7s;
+    overflow: visible;
+  }
+    
+   
+  .container{
+    width: 600px;
+    height: 338px;
+    overflow: hidden;
+  }
+  
+ 
