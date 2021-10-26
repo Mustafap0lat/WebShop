@@ -14,33 +14,30 @@
     html{font-size: 70%;} 
     .align-sm-center {align-items: center;}  
     .heading-xxs-width{width: 100% !important;}
-    .img-new-adjust {  width: 75rem;
-      height: 20rem !important;}
+  
+    
       .f-block{display: block !important;} /*blockerar bilden*/
      .text-adjustment{align-self: center;} /*[SELF] justerar texten så den hamnar i mitten vid denna storlek skit bra!*/
-  
+     
     }
-  @media only screen and (max-width: 40em){/*Samsung galaxy 5 Liggandes*/
-    html{font-size: 80%;} 
-    .align-sm-center {align-items: center;}  
-    .heading-xxs-width{width: 100% !important;}
-    .d-sm-none{display: none !important;}
-    .img-new-adjust {  width: 75rem;
-      height: 12rem !important;}
+     @media only screen and (max-width: 40em){/*Samsung galaxy 5 Liggandes*/
+      html{font-size: 80%;} 
+      .align-sm-center {align-items: center;}  
+      .heading-xxs-width{width: 100% !important;}
+      .d-sm-none{display: none !important;}
+    
       .logo-width-sm{width: 100px;}
   }
   
     @media only screen and (max-width: 37.5em){
       html{font-size: 80%;} 
       .align-sm-center {align-items: center;}  
-      .img-new-adjust {  width: 75rem;
-        height: 12rem !important;}
+ 
     }
     @media only screen and (max-width: 29.5em){
       html{font-size: 80%;} 
       .align-sm-center {align-items: center;}    
-      .img-new-adjust {  width: 37.5rem;
-        height: 12rem !important;}
+
 
     @media only screen and (max-width: 29.5em){
             .logo-width-sm{width: 100px; margin-bottom: 8px;}
@@ -50,8 +47,7 @@
     @media only screen and (max-width: 22.5em){
       html{font-size: 80%;} 
       .align-sm-center {align-items: center;}    
-        .img-new-adjust {  width: 29rem;
-          height: 12rem !important;}
+   
           
         }
     

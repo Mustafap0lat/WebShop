@@ -104,7 +104,7 @@
  html {
      box-sizing: border-box; /*gör så boxen i detta fall html boxen är dynamisk*/
      font-size: 62.5%; /*1rem = 10px, 10px/16px=62.5%*/
- 
+     height: 100%;
  }
  
  body {
@@ -115,7 +115,8 @@
      color: var(--color-dark);
      font-size: var(--display-sm);
      min-height: 100vh;
- }
+    
+    }
  
  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
      font-family: "Dosis", "Open Sans", sans-serif;
@@ -123,6 +124,9 @@
      letter-spacing: .05rem;}
      .ht, h1 { font-size: var(--distance-13);}  /**[.h1,=Classen h1,=Elementet]***/
  
+     footer{
+         margin-top: auto;
+     }
  
  
  /***Background Colours****/
