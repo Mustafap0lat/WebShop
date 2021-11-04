@@ -55,8 +55,6 @@
       }
   
         
-      
-    
     @media screen and (max-width: 37.5em){/*600px / 16px = 37.5em*/ /*Samma som ovanstående fast 100% när vi går under 600px. */
        .align-image-center{display: block; margin: 0 auto;}  
       .d-sm-none{display: none !important;} /*Gör så att vår första navigation på toppen av sidan försvinner under 600px */ 

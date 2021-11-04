@@ -160,7 +160,7 @@ padding: var(--distance-1) var(--distance-3);} /*gör så att "3an" hamnar upp i
 /*******************
 ****** Circle *****
 ********************/
-.circle{border-radius: 100%;}
+.circle{border-radius: 100%; width: 2rem; height: 2rem;}
 .circle-lg{width: 15rem; height: 15rem;}
 
 /*******************
@@ -277,7 +277,7 @@ padding: var(--distance-1) var(--distance-3);} /*gör så att "3an" hamnar upp i
     list-style: none;
     border-radius: 5px;
     opacity: 0;
-    pointer-events: none;
+    pointer-events: none; /*så att alternativet att trycka på a:taggarna försvinner under*/
     transform: translateY(-10px);
     transition: all 0.4s ease;
   }
@@ -338,24 +338,15 @@ padding: var(--distance-1) var(--distance-3);} /*gör så att "3an" hamnar upp i
   }
 
   .z-img img:hover{ 
-    
-    transform: scale(1.3) translateX(20px);
-    width: 200%;
+   cursor:cell;
+   pointer-events: all;
+    transform: scale(1.3) translateX(10px);
     background-position: center;
     background-size: cover;
     transition: 0.7s;
     overflow: visible;
   }
     
-   
-  .container{
-    width: 600px;
-    height: 338px;
-    overflow: hidden;
-  }
-  
-
-
   
   .j-right{
     justify-content: right;
@@ -373,3 +364,32 @@ padding: var(--distance-1) var(--distance-3);} /*gör så att "3an" hamnar upp i
     top: 100%;
   }
 
+
+  .thumbnail{
+   max-width: 70%;
+
+  }
+
+  .lightbox{
+    display: none;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+   
+    top:0;
+    left:0;
+    
+    
+  }
+
+  .lightbox img{
+    max-width: 200%;
+    max-height: 80%;
+    margin-top: 20%;
+  }
+
+  .lightbox:target{
+    outline: none;
+ display: block;
+ 
+  }
